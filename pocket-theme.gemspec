@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "pocket-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Leon Paternoster"]
   spec.email         = ["leon.paternoster@zoho.com"]
 
