@@ -1,6 +1,6 @@
 ---
 title: Example page
-layout: default
+layout: page
 intro: "Intros serve as an introduction to what’s about to follow. They’re also known as standfirsts, and are completely optional."
 ---
 
