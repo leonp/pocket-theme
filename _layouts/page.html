@@ -1,0 +1,29 @@
+{% include header.html %}
+
+<div class="ph3 ph4-ns">
+
+    <div class="c-measure center c-article">
+
+        <div class="mb4">
+
+            <h1 class="f3 f2-ns c-lh-title ma0">{{ page.title }}</h1>
+
+            {% if page.intro %}
+
+            <p class="f5 f4-ns">{{ page.intro }}</p>
+
+            {% endif %}
+
+        </div>
+
+        <div class="c-hyphens">
+
+        {{ content}}
+
+        </div>
+
+    </div>
+
+</div>
+
+{% include footer.html %}

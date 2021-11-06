@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "pocket-theme"
-  spec.version       = "0.3.0"
+  spec.version       = "0.4.1"
   spec.authors       = ["Leon Paternoster"]
   spec.email         = ["leon.paternoster@zoho.com"]
 
@@ -16,5 +16,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 4.2"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
+  spec.add_runtime_dependency "jekyll-feed"
 end
 
