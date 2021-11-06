@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "pocket-theme"
+  spec.name          = "Pocket"
   spec.version       = "0.1.0"
   spec.authors       = ["leonp"]
   spec.email         = ["leon.paternoster@zoho.com"]
