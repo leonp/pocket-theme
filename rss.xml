@@ -1,0 +1,31 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="text" xml:lang="en">{{ site.title }}</title>
+    <description>{{ site.description }}</description>
+    <link type="application/atom+xml" href="{{ site.url }}/rss.xml" rel="self"/>
+    <link type="text/html" href="{{ site.url }}" rel="alternate"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}</id>
+    <author><name>{{ site.author }}</name></author>
+    <rights>Copyright (c) {{ site.title }} – {{ site.author }}</rights>
+    <docs>https://www.thisdaysportion.com/about/what-is-rss/</docs>
+
+    {% assign posts = site.posts | sort: "date" | reverse %}
+
+    {% for entry in posts limit:20 %}
+
+          <entry>
+              <title>{{ entry.title | escape }}</title>
+              <link href="{{ site.url }}{{ entry.url }}"/>
+              <updated>{{ entry.date | date_to_xmlschema }}</updated>
+              <id>{{ site.url }}{{ entry.url }}</id>
+              {% capture description %}{{ entry.title | escape | truncate: 60 }}: {{ entry.excerpt | strip_html | truncate: 190 }}{% endcapture %}
+              <description>{{ description }}</description>
+              <content type="html">{{ entry.content | xml_escape }}</content>
+          </entry>
+
+    {% endfor %}
+
+</feed>

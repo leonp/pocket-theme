@@ -1,0 +1,142 @@
+html {
+	font-size: clamp(112.5%, 2.2vw, 125%);
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration-thickness: var(--text-decoration-thickness);
+}
+
+a:link {
+	color: var(--link);
+}
+
+a:visited {
+	color: var(--visited);
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: var(--hover);
+}
+
+code {
+	font-size: var(--font-size-code);
+}
+
+code {
+    font-size: var(--font-size-code);
+    font-family: var(--monospace);
+    color: var(--code-color);
+}
+
+figure {
+    margin: 0;
+}
+
+pre {
+    overflow: auto;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--pre-bg);
+    color: var(--pre-foreground);
+    border: 1px solid var(--border-img-color);
+    line-height: var(--lh-title);
+}
+
+pre code {
+    color: var(--pre-foreground);
+}
+
+table {
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+td,
+th {
+    border: 1px solid var(--border-form-color);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    font-weight: 600;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-size: 0.875rem;
+}
+
+hr {
+    padding: 0;
+    margin: 2rem 0;
+    border: 0.1rem double var(--accent);
+}
+
+svg {
+    max-width: 1em !important;
+    height: auto !important;
+}
+
+
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article dt,
+.c-article h2,
+.c-article h3,
+.c-article h4,
+.c-article h5,
+.c-article h6,
+.c-article dt {
+	margin-top: var(--article-heading-mt);
+	margin-bottom: var(--article-heading-mb);
+	text-align: var(--article-heading-font-alignment);
+	line-height: var(--lh-title);
+	hyphens: manual;
+	-webkit-hyphens: manual;
+}
+
+article h2,
+.c-article h2 {
+	font-size: var(--article-font-size-h2)
+}
+
+article h3,
+.c-article h3 {
+	font-size: var(--article-font-size-h3)
+}
+
+article dt,
+.c-article dt {
+    font-style: italic;
+}
+
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.c-responsive-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.c-responsive-embed iframe,
+.c-responsive-embed object,
+.c-responsive-embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

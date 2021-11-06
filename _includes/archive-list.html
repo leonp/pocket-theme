@@ -1,0 +1,51 @@
+{% assign items = paginator.posts %}
+
+{% for item in items %}
+
+  <div class="mv4">
+
+    <div class="flex flex-column-reverse mb2">
+
+      <h2 class="f5 f4-ns c-lh-title ma0"><a class="db c-link no-underline underline-hover" href="{{ item.url }}">{{ item.title }}</a></h2>
+
+      <p class="ma0 f6 mt0 mb2"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%-d %b, %Y" }}</time></p>
+
+    </div>
+
+  </div>
+
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+
+<div class="pt4">
+
+    <div class="b f6 cf">
+
+        {% if paginator.next_page %}
+
+            <div class="w-50 fl pr3">
+
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&larr; Older</a>
+
+            </div>
+
+        {% endif %}
+
+      {% if paginator.previous_page %}
+
+          <div class="w-50 fr tr pl3">
+
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer &rarr;</a>
+
+          </div>
+
+      {% endif %}
+
+    </div>
+
+    <p class="f6 mt0 tc">{{page.pagination_info.curr_page}}/{{page.pagination_info.total_pages}}</p>
+
+</div>
+
+{% endif %}

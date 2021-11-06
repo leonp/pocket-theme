@@ -1,5 +1,44 @@
----
-layout: default
----
+{% include header.html %}
 
-{{ content }}
+<div class="ph3 ph4-ns">
+
+    <article class="c-measure center h-entry">
+
+        <div class="mb4">
+
+            <div class="flex flex-column-reverse">
+
+                <h1 class="f3 f2-ns c-lh-title ma0 p-name">{{ page.title }}</h1>
+
+                <p class="f6 mt0 mb2"><time class="dt-published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %b, %Y" }}</time>{% if page.author %} &middot; <span class="p-author">{{ page.author }}</span>{% elsif site.author %} &middot; <span class="p-author">{{ site.author }}</span>{% endif %}</p>
+
+            </div>
+
+            {% if page.intro %}
+
+            <p class="f5 f4-ns">{{ page.intro }}</p>
+
+            {% endif %}
+
+        </div>
+
+        <div class="c-hyphens e-content">
+
+        {{ content}}
+
+        </div>
+
+        <div class="clip">
+
+            <span class="u-url">{{site.url}}{{ page.url }}</span>
+            {% if page.in-reply-to %}<span class="u-in-reply-to">{{ page.in-reply-to }}</span>{% endif %}
+            {% if page.like-of %}<span class="u-like-of">{{ page.like-of }}</span>{% endif %}
+            {% if page.repost-of %}<span class="u-repost-of">{{ page.repost-of }}</span>{% endif %}
+
+        </div>
+
+    </article>
+
+</div>
+
+{% include footer.html %}

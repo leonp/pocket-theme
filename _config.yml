@@ -1,0 +1,52 @@
+title: "The Pocket theme for Jekyll"
+description: "Pocket is a really simple, easy to read, rock solid and ultra fast blogging theme for Jekyll."
+author: Leon Paternoster
+lang: "en" # or fr, de, es etc.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Include styles inline or link to css file?
+# This has to be set to css: inline for the theme to inline styles
+# Set it to anything else, or remove it, to link to /css/style.css
+css: external
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+permalink: /:title/
+
+# Defaults
+# Use {% if page.is_post %} etc.
+defaults:
+-
+    scope:
+        path: "/"      # empty string for all files
+    values:
+        is_home: true
+-
+    scope:
+        path: ""
+        type: posts
+    values:
+        is_post: true
+        layout: post
+-
+    scope:
+        path: ""
+        type: pages
+    values:
+        is_page: true
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/

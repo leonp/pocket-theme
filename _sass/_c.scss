@@ -1,0 +1,57 @@
+@media screen, projection {
+
+.c-sans-serif {
+    font-family: var(--sans-serif);
+}
+
+.c-measure {
+    max-width: var(--measure);
+}
+
+.c-foreground,
+a.c-foreground {
+    color: var(--foreground);
+}
+
+.c-bg {
+    background-color: var(--bg);
+}
+
+.c-lh-copy {
+    line-height: var(--lh-copy);
+}
+
+.c-lh-title {
+    line-height: var(--lh-title);
+}
+
+.c-accent,
+a.c-accent {
+    color: var(--accent);
+}
+
+.c-link,
+a.c-link {
+    color: var(--link);
+}
+
+.c-hyphens {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+
+// Some empty media queries
+// Use these if you want to make responsive custom classes
+
+@media #{$breakpoint-not-small} {
+}
+
+@media #{$breakpoint-medium} {
+}
+
+@media #{$breakpoint-large} {
+}
+
+
+} // End the enclosing screen/projection media query

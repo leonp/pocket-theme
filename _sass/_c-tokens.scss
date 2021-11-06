@@ -1,0 +1,132 @@
+:root {
+
+    // Tachyons palette
+    --t-black: #000000;
+    --t-near-black: #111111;
+    --t-dark-gray: #333333;
+    --t-mid-gray: #555555;
+    --t-gray: #777777;
+    --t-silver: #999999;
+    --t-light-silver: #AAAAAA;
+    --t-moon-gray: #CCCCCC;
+    --t-light-gray: #EEEEEE;
+    --t-near-white: #F4F4F4;
+    --t-white: #FFFFFF;
+    --t-dark-red: #E7040F;
+    --t-red: #FF4136;
+    --t-light-red: #FF725C;
+    --t-orange: #FF6300;
+    --t-gold: #FFB700;
+    --t-yellow: #FFD700;
+    --t-dortmund: #FFFF00;
+    --t-light-yellow: #FBF1A9;
+    --t-purple: #5E2CA5;
+    --t-light-purple: #A463F2;
+    --t-dark-pink: #D5008F;
+    --t-hot-pink: #FF41B4;
+    --t-pink: #FF80CC;
+    --t-light-pink: #FFA3D7;
+    --t-dark-green: #137752;
+    --t-green: #19A974;
+    --t-light-green: #9EEBCF;
+    --t-navy: #001B44;
+    --t-dark-blue: #00449E;
+    --t-blue: #357EDD;
+    --t-light-blue: #96CCFF;
+    --t-lightest-blue: #CDECFF;
+    --t-washed-blue: #F6FFFE;
+    --t-washed-green: #E8FDF5;
+    --t-washed-yellow: #FFFCEB;
+    --t-washed-red: #FFDFDF;
+
+    // Typeface
+    --serif: Georgia, serif;
+    --sans-serif: -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
+    --font-size: 112.5%;
+    --font-size-m: 118.75%;
+    --font-size-l: 131.25%;
+    --font-size-code: 87.5%;
+    --lh-copy: 1.5;
+    --lh-title: 1.2;
+    --text-decoration-thickness: 2px;
+    --title-heading-font-family: var(--sans-serif);
+    --title-heading-weight: bold;
+    --title-heading-font-style: normal;
+    --article-heading-font-family: var(--sans-serif);
+    --article-heading-weight: bold;
+    --article-heading-mt: 2.25rem;
+    --article-heading-mb: 1rem;
+    --article-heading-font-style: normal;
+    --article-heading-font-alignment: left;
+    --article-font-size-h2: 1.25rem;
+    --article-font-size-h3: 1rem;
+
+    // Layout
+    --measure: 38rem;
+    --half-measure: calc(var(--measure) / 2);
+    --one-and-a-half-measure: calc(var(--measure) * 1.5);
+    --bleed-width: calc(100% + 2rem);
+    --bleed-width-ns: calc(100% + 4rem);
+    --bleed-width-l: 90vw;
+    --pull-left: -1rem;
+    --pull-left-ns: -2rem;
+    --pull-left-l: 0;
+
+    // Colours
+    --klein-browser-blue: #0000EE;
+    --accent: var(--t-blue);
+    --link: var(--t-black);
+    --visited: var(--t-mid-gray);
+    --hover: var(--t-black);
+    --nav-link: var(--t-black);
+    --nav-link-hover: var(--accent);
+    --text-decoration-color: var(--accent);
+    --foreground: var(--t-dark-gray);
+    --bg: var(--t-white);
+    --header-foreground: var(--t-dark-gray);
+    --header-bg: var(--t-white);
+    --bg-secondary: var(--t-near-white);
+    --pre-foreground: var(--t-washed-green);
+    --pre-bg: var(--t-near-black);
+    --title-color: var(--t-black);
+    --article-heading-color: var(--t-black);
+    --bg-button: var(--t-moon-gray);
+    --bg-button--hover: var(--t-light-gray);
+    --foreground-button: var(--foreground);
+    --code-color: var(--t-dark-red);
+
+    // Rules and borders
+    --border-img-color: var(--t-moon-gray);
+    --border-form-color: var(--t-light-silver);
+    --compulsory: var(--t-dark-red)
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+    // Colours
+    --accent: #F5B042;
+    --link: var(--t-white);
+    --visited: var(--t-light-silver);
+    --hover: var(--t-white);
+    --nav-link: var(--t-white);
+    --text-decoration-color: var(--accent);
+    --foreground: var(--t-moon-gray);
+    --bg: var(--t-dark-gray);
+    --header-foreground: var(--t-moon-gray);
+    --header-bg: var(--t-black);
+    --bg-secondary: var(--mid-gray);
+    --pre-bg: var(--t-black);
+    --title-color: var(--t-near-white);
+    --article-heading-color: var(--t-near-white);
+    --compulsory: var(--t-light-pink);
+    --foreground-button: var(--t-dark-gray);
+    --code-color: var(--t-gold);
+
+    // Rules and borders
+    --border-img-color: var(--t-gray);
+    --border-form-color: var(--t-gray);
+
+    }
+}
