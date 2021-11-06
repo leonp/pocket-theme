@@ -4,7 +4,7 @@ title: A more considered approach to trigonometery
 
  Avocado dressing drizzle fiery fruit ginger lemongrass agave green tea shiitake mushrooms citrusy falafel bites lemon lime minty bite sized guacamole fresh banana blueberries avocado basil pesto crispy Italian pepperoncini. Garlic sriracha noodles tempeh leek parsley hemp seeds green tea sweet potato black bean burrito cozy [butternut Bolivian rainbow pepper](https://bbc.co.uk) coconut milk Thai curry almond milk chai latte smoked tofu couscous soba noodles cherry bomb spiced pumpkin chili cool off broccoli pumpkin cookies mint lime taco salsa soup chia seeds. Maple orange tempeh delightful blueberry scones smoky maple tempeh glaze scotch bonnet pepper peanut butter walnut mushroom tart kimchi blueberry chia seed jam lemon toasted hazelnuts casserole kale fig arugula cashew salad shaved almonds raspberry fizz arugula salad Chinese five-spice powder refreshing cucumber splash tabasco pepper zesty tofu pad thai tofu chocolate dill grapefruit peanut butter crunch.
 
- ![Composition](/images/sta.webp)
+ ![Composition](/assets/images/sta.webp)
 
 Lentils chilies lime mango crisp strawberry mango smoothie blackberries crumbled lentils Bulgarian carrot golden cayenne pepper veggie burgers mediterranean luxury bowl mangos bananas spring portobello mushrooms comforting pumpkin spice latte entree pasta almond milk overflowing lingonberry onion farro platter apple vinaigrette cherry elderberry. Ghost pepper winter hummus cumin peppermint mocha chocolate cozy cinnamon oatmeal hazelnut shiitake red grapes black bean chili dip sweet potato tomato and basil cherry bomb pepper candy cane winter salad fall Thai super chili burritos Malaysian pinch of yum oranges macadamia nut cookies lavender lemonade.
 
