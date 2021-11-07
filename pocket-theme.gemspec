@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "pocket-theme"
-  spec.version       = "0.4.3"
+  spec.version       = "0.4.4"
   spec.authors       = ["Leon Paternoster"]
   spec.email         = ["leon.paternoster@zoho.com"]
 
-  spec.summary       = %q{Pocket is a fast, neutral theme with no javascript, plugins or web fonts.}
+  spec.summary       = %q{Pocket is a fast, neutral theme for Jekyll. It uses no javascript or web fonts, and loads only one plugin.}
   spec.homepage      = "https://github.com/leonp/pocket-theme"
   spec.license       = "MIT"
 
